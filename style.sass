@@ -1,0 +1,167 @@
+// Cores Primárias
+$primary-colors-facebook: #3b5998
+$primary-colors-twitter: #1da1f2
+$primary-colors-instagram: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045)
+$primary-colors-youtube: #ff0000
+
+// Cores do Tema Claro
+$light-theme-bg-color: #ffffff
+$light-theme-card-bg-color: #0033ff
+$light-theme-text-color: #5a6674
+$light-theme-text-light-color: #1e202a
+$light-theme-toggle-bg-color: #cdd1d8
+
+// Cores do Tema Escuro
+$dark-theme-bg-color: #1e202a
+$dark-theme-card-bg-color: #252b43
+$dark-theme-text-color: #aeb3cb
+$dark-theme-text-light-color: #ffffff
+$dark-theme-toggle-bg-color: linear-gradient(to right, #339ecc, #2ebd6f)
+
+body
+  font-family: 'Inter', sans-serif
+  margin: 0
+  padding: 0
+  background-color: $light-theme-bg-color
+  color: $light-theme-text-color
+
+// Topo
+#topo
+  display: flex
+  
+  margin: 20px 40px
+.toposocial
+  display: flex
+  margin: 0px
+h1
+    font-size: 24px
+    margin: 0px
+
+.total-followers
+    font-size: 14px
+    color: $light-theme-text-light-color
+
+.dark-mode
+    display: flex
+    
+
+    input[type="checkbox"]
+      cursor: pointer
+    
+
+// Seguidores
+#seguidores
+display:grid
+grid-template-columns:repeat(4, 1fr)
+margin:20px 40px
+position:relative
+padding: 20px
+background-color: $light-theme-card-bg-color
+border-radius: 10px
+text-align: center
+
+
+    &::before
+      display: block
+      height: 4px
+      width: 100%
+      border-radius: 10px 10px 0 0
+      background-color: inherit
+      position: absolute
+      top: 0
+      left: 0
+      &:hover
+      background-color: #4d0101
+      cursor: pointer
+    &.facebook::before
+      background-color: $primary-colors-facebook
+   
+    &.twitter::before
+      background-color: $primary-colors-twitter
+
+    &.instagram::before
+      background: $primary-colors-instagram
+
+    &.youtube::before
+      background-color: $primary-colors-youtube
+
+    img
+      margin-bottom: 0px
+       
+        
+    h2
+      font-size: 40px
+      margin-bottom: 0px
+      margin-top: 20px
+      color: #000
+     
+    p
+      margin: 0
+
+    .today
+        font-size: 14px
+        margin-top: 10px
+        color: #006315
+
+// Overview
+#overview
+  margin: 20px 40px
+
+  h3
+    font-size: 20px
+    margin-bottom: 20px
+
+  .overview-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 50px
+
+    .overview-card
+      background-color: $light-theme-card-bg-color
+      padding: 20px
+      border-radius: 10px
+      text-align: center
+
+      img
+        margin-bottom: 10px
+        width: 50px
+        height: 50px
+
+      p
+        font-size: 14px
+        color: $light-theme-text-light-color
+        margin: 0
+
+      h2
+        font-size: 24px
+        margin: 0
+      
+.today{
+  height: auto;
+}
+.todaynegative{
+  color: red;
+}
+
+     
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
